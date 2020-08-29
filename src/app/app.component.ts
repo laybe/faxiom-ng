@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { SingleProposition } from './models/single-proposition';
+import { Component, OnInit } from '@angular/core';
+import { PropositionUnion } from './models/proposition/proposition-union';
+import PropositionJson from './mock/proposition.json';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,11 @@ import { SingleProposition } from './models/single-proposition';
 })
 export class AppComponent {
 
-  proposition: SingleProposition;
+  proposition: PropositionUnion;
+  hidePremises: boolean = false;
+  hideConclusions: boolean = false;
 
   constructor() {
-    this.proposition = { text: 'test'};
+    this.proposition = PropositionJson as PropositionUnion;
   }
 }

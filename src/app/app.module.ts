@@ -11,6 +11,7 @@ import { ConnectedPropositionComponent } from './components/proposition/connecte
 import { PropositionWithArgumentsComponent } from './components/proposition/proposition-with-arguments/proposition-with-arguments.component';
 import { PropositionComponent } from './components/proposition/proposition/proposition.component';
 import { SinglePropositionComponent } from './components/proposition/single-proposition/single-proposition.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SinglePropositionComponent } from './components/proposition/single-prop
     ArgumentComponent,
     ArgumentsListComponent,
     HideableComponent,
-    NavigationButtonComponent
+    NavigationButtonComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
