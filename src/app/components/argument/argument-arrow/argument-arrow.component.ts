@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ArgumentType } from '@angular/compiler/src/core';
+import { ArgumentType } from '../../../models/argument-type';
 
 @Component({
   selector: 'app-argument-arrow',

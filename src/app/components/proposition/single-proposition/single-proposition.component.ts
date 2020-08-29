@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SingleProposition } from './../single-proposition';
+import { SingleProposition } from '../../../models/single-proposition';
 
 @Component({
   selector: 'app-single-proposition',

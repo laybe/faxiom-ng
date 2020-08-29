@@ -1,0 +1,96 @@
+{
+    "id": "123",
+    "type": "single",
+    "text": "La chimie, qui nous fournit aujourd’hui bon nombre de produits « incorporant » du pétrole ou du gaz (par exemple le plastique, donc, mais encore les engrais ou…les ordinateurs), ne peut pas être remplacé par une énergie renouvelable.",
+    "premisesArguments": [
+      {
+        "id": "456",
+        "type": "implication",
+        "premise": {
+          "id": "124",
+          "type": "connection",
+          "connectionType": "conjunction",
+          "connectedPropositions": [
+            {
+              "id": "126",
+              "type": "single",
+              "text": "def"
+            },
+            {
+              "id": "127",
+              "type": "single",
+              "text": "ghi"
+            }
+          ]
+        }
+      },
+      {
+        "id": "457",
+        "type": "abjunction",
+        "premise": {
+          "id": "125",
+          "type": "single",
+          "text": "Il est possible de faire toute la chimie organique avec du bois."
+        }
+      },
+      {
+        "id": "459",
+        "type": "implication",
+        "premise": {
+          "id": "130",
+          "type": "single",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta magna nec sapien mollis, et sollicitudin lacus blandit. Vivamus bibendum augue sit amet leo aliquam, vel sollicitudin nisi pulvinar. Cras fringilla efficitur quam, ut ultrices turpis ullamcorper at. Quisque vel finibus lectus, a ultricies urna. Sed porttitor dapibus nulla eu finibus."
+        }
+      },
+      {
+        "id": "460",
+        "type": "implication",
+        "premise": {
+          "id": "131",
+          "type": "single",
+          "text": "Cras commodo tempor elementum. Morbi tempor ante sed ligula iaculis dapibus. Maecenas ut dolor eget mi mattis auctor eu sed ligula. Donec id posuere nisl. Cras quis felis enim."
+        }
+      }
+    ],
+    "conclusionsArguments": [
+      {
+        "id": "459",
+        "type": "abjunction",
+        "conclusion": {
+          "id": "133",
+          "type": "single",
+          "text": "elementum. Morbi tempor ante sed ligula iaculis dapibus."
+        }
+      }
+    ],
+    "partOfConnections": [
+      {
+        "id": "128",
+        "type": "connection",
+        "connectionType": "disjunction",
+        "connectedPropositions": [
+          {
+            "id": "123",
+            "type": "single",
+            "text": "La chimie, qui nous fournit aujourd’hui bon nombre de produits « incorporant » du pétrole ou du gaz (par exemple le plastique, donc, mais encore les engrais ou…les ordinateurs), ne peut pas être remplacé par une énergie renouvelable."
+          },
+          {
+            "id": "129",
+            "type": "single",
+            "text": "mno"
+          }
+        ],
+        "conclusionsArguments": [
+          {
+            "id": "458",
+            "type": "implication",
+            "conclusion": {
+              "id": "132",
+              "type": "single",
+              "text": "pqr"
+            }
+          }
+        ]
+      }
+    ]
+  }

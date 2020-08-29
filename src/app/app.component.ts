@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SingleProposition } from './single-proposition';
+import { SingleProposition } from './models/single-proposition';
 
 @Component({
   selector: 'app-root',
