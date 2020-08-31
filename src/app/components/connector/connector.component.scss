@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  height: 50px;
+  width: 100px;
+}
+
+.arrow {
+  position: absolute;
+
+  /* Center */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 0px;
+  width: 0px;
+
+  &.back {
+    border: 50px solid transparent;
+  }
+
+  &.front {
+    border: 30px solid transparent;
+  }
+}
+
+.conjunction .arrow {
+  bottom: 0px;
+
+  &.back {
+    border-bottom: 50px solid lightgray;
+  }
+  &.front {
+    border-bottom: 30px solid white;
+  }
+}
+
+.disjunction .arrow {
+  top: 0px;
+
+  &.back {
+    border-top: 50px solid lightgray;
+  }
+  &.front {
+    border-top: 30px solid white;
+  }
+}

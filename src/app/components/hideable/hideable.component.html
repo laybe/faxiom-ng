@@ -1,1 +1,12 @@
-<p>hideable works!</p>
+<ng-template [ngIf]="buttonOnTheRight" [ngIfElse]="buttonOnTheLeft">
+  <ng-template [ngIf]="!hide">
+    <ng-content></ng-content>
+  </ng-template>
+  <div class="button" (click)="onClick()"></div>
+</ng-template>
+<ng-template #buttonOnTheLeft>
+  <div class="button" (click)="onClick()"></div>
+  <ng-template [ngIf]="!hide">
+    <ng-content></ng-content>
+  </ng-template>
+</ng-template>

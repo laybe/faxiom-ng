@@ -12,6 +12,7 @@ import { PropositionWithArgumentsComponent } from './components/proposition/prop
 import { PropositionComponent } from './components/proposition/proposition/proposition.component';
 import { SinglePropositionComponent } from './components/proposition/single-proposition/single-proposition.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { ConnectorComponent } from './components/connector/connector.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { LayoutComponent } from './components/layout/layout.component';
     ArgumentsListComponent,
     HideableComponent,
     NavigationButtonComponent,
-    LayoutComponent
+    LayoutComponent,
+    ConnectorComponent
   ],
   imports: [
     BrowserModule,

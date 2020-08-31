@@ -1,1 +1,16 @@
-<p>proposition-with-arguments works!</p>
+<!-- TODO -->
+<ng-template [ngIf]="proposition && !hide">
+  <app-hideable [buttonOnTheRight]="true">
+    <div>
+      <app-arguments-list *ngIf="isSingleProposition" argumentsList={proposition.premisesArguments}></app-arguments-list>
+    </div>
+  </app-hideable>
+  <div class="mainProposition">
+    <app-proposition [proposition]="proposition"></app-proposition>
+  </div>
+  <app-hideable>
+    <div>
+      <app-arguments-list [argumentsList]="proposition.conclusionsArguments" showConclusions></app-arguments-list>
+    </div>
+  </app-hideable>
+</ng-template>

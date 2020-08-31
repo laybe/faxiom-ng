@@ -1,1 +1,6 @@
-<p>connected-proposition works!</p>
+<div>
+  <ng-template ngFor let-propositionElement [ngForOf]="proposition.connectedPropositions" let-isFirst="first">
+    <app-connector *ngIf="!isFirst" type={proposition.connectionType}></app-connector>
+    <ng-template [ngTemplateOutlet]="templateRef" [ngTemplateOutletContext]="{$implicit: propositionElement}"></ng-template>
+  </ng-template>
+</div>

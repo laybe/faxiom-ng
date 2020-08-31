@@ -1,1 +1,10 @@
-<p>argument works!</p>
+<div class='container' [ngClass]="{'conclusions': showConclusions}">
+  <ng-template [ngIf]="showConclusions" [ngIfElse]="showPremises">
+    <div class='item arrow'><app-argument-arrow [type]="argument.type"></app-argument-arrow></div>
+    <div class='item proposition'><app-proposition [proposition]="argument.conclusion"></app-proposition></div>
+  </ng-template>
+  <ng-template #showPremises>
+    <div class='item proposition'><app-proposition [proposition]="argument.premise"></app-proposition></div>
+    <div class='item arrow'><app-argument-arrow [type]="argument.type"></app-argument-arrow></div>
+  </ng-template>
+</div>

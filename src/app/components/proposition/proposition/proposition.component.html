@@ -1,1 +1,8 @@
-<p>proposition works!</p>
+<app-single-proposition *ngIf="isSingleProposition; else elseBlock"></app-single-proposition>
+<ng-template #elseBlock>
+    <app-connected-proposition *ngIf="isConnectedProposition">
+      <ng-template let-connectedPropositionElement>
+        <app-proposition [proposition]="connectedPropositionElement"></app-proposition>
+      </ng-template>
+    </app-connected-proposition>
+</ng-template>
