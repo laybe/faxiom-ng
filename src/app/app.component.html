@@ -1,6 +1,7 @@
-<ng-template [ngIf]="proposition">
+<app-example-choice></app-example-choice>
+<div *ngIf="(proposition$ | async) as proposition">
   <app-proposition-with-arguments [proposition]="proposition"></app-proposition-with-arguments>
   <app-proposition-with-arguments *ngFor="let connection of proposition.partOfConnections" [proposition]="connection"></app-proposition-with-arguments>
-</ng-template>
+</div>
 
 <router-outlet></router-outlet>

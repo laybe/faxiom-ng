@@ -1,0 +1,36 @@
+{
+  "id": "140",
+  "type": "single",
+  "text": "Lorem Ipsum sdf s sjkfz iohdksjf ksjdf slkdjfslkjf skd jlksjf ls",
+  "premisesArguments": [
+    {
+      "id": "470",
+      "type": "implication",
+      "premise": {
+        "id": "141",
+        "type": "single",
+        "text": "SKDFSFJ skdfjskjd fkjsdfks elementum. Morbi tempor ante sed ligula iaculis dapibus."
+      }
+    },
+    {
+      "id": "471",
+      "type": "abjunction",
+      "premise": {
+        "id": "142",
+        "type": "single",
+        "text": "Lorem Ipsum sdlfksdf klsjf skjksbzb z z."
+      }
+    }
+  ],
+  "conclusionsArguments": [
+    {
+      "id": "472",
+      "type": "abjunction",
+      "conclusion": {
+        "id": "143",
+        "type": "single",
+        "text": "LSFDLK lskdflskldfk sdsd sd s"
+      }
+    }
+  ]
+}

@@ -13,6 +13,9 @@ import { PropositionComponent } from './components/proposition/proposition/propo
 import { SinglePropositionComponent } from './components/proposition/single-proposition/single-proposition.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ConnectorComponent } from './components/connector/connector.component';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
+import { ExampleChoiceComponent } from './components/example-choice/example-choice.component';
 
 
 @NgModule({
@@ -28,11 +31,15 @@ import { ConnectorComponent } from './components/connector/connector.component';
     HideableComponent,
     NavigationButtonComponent,
     LayoutComponent,
-    ConnectorComponent
+    ConnectorComponent,
+    ExampleChoiceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
