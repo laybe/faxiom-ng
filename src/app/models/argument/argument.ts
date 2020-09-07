@@ -5,6 +5,6 @@ import type { ArgumentType } from "./argument-type";
 export interface Argument {
   id: string;
   type: ArgumentType;
-  premise: PropositionUnion;
-  conclusion: SingleProposition;
+  premise?: PropositionUnion;
+  conclusion?: SingleProposition;
 }

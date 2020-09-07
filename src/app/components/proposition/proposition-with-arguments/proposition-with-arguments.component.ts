@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, OnChanges, ChangeDetectionStrategy, SimpleChanges } from '@angular/core';
 import { PropositionUnion } from 'src/app/models/proposition/proposition-union';
 import { PropositionTypeguardService } from 'src/app/services/proposition-typeguard.service';
+import { SingleProposition } from 'src/app/models/proposition/single-proposition';
 
 @Component({
   selector: 'app-proposition-with-arguments',
@@ -17,6 +18,7 @@ export class PropositionWithArgumentsComponent implements OnInit, OnChanges {
   hide: boolean = false;
 
   isSingleProposition: boolean;
+  singleProposition: SingleProposition;
 
   // @Input()
   // hidePremises: boolean = false;
@@ -31,5 +33,8 @@ export class PropositionWithArgumentsComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     this.isSingleProposition = this.propositionTypeGuard.isSingleProposition(this.proposition);
+    if (this.propositionTypeGuard.isSingleProposition(this.proposition)) {
+      this.singleProposition = this.proposition;
+    }
   }
 }

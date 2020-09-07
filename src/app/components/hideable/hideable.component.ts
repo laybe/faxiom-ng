@@ -8,9 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HideableComponent implements OnInit {
 
   @Input()
-  buttonOnTheRight: boolean = false;
-
-  @Input()
   hide: boolean = false;
 
   constructor() { }

@@ -1,5 +1,3 @@
-<!-- TODO -->
-
 <ng-template [ngIf]="proposition">
   <app-proposition-with-arguments [proposition]="proposition"></app-proposition-with-arguments>
   <app-proposition-with-arguments *ngFor="let connection of proposition.partOfConnections" [proposition]="connection"></app-proposition-with-arguments>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PropositionUnion } from './models/proposition/proposition-union';
 import PropositionJson from './mock/proposition.json';
 
